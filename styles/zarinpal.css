@@ -14,7 +14,7 @@ header{
     width: 1170px;
     margin: auto;
     padding: 21px 0 7px;
-    background-color: rgba(225, 225, 225, 0.72);
+    /* background-color: rgba(225, 225, 225, 0.72); */
     backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
@@ -269,8 +269,150 @@ header{
     top: -60px;
 }
 
+.online-pyment{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.online-pyment img{
+    width: 450px;
+    height: 480px;
+}
 
+.section-text{
+    margin: 25px 0;
+    width: 530px;
+}
+.section-text h2{
+    color: #747480;
+    font-family:YekanBakhMedium;
+    font-weight: 500px;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+.section-text h3{
+    color: #303030;
+    font-family:YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px 0 10px;
+}
+.section-text p{
+    color: #303030;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    line-height: 40px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
 
+.section-links{
+    margin-top: 40px;
+    display: flex;
+}
+.section-links .first-button {
+    font-size: 0.9rem;
+    font-family:iranyekanwebmedium;
+    color: #000;
+    background: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left:10px;
+    text-decoration: none;
+}
+
+.section-links .second-button{
+    font-size: 0.9rem;
+    font-family:iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.section-links .second-button img{
+    width: 18px;
+    height: 15px;
+    margin-right:5px;
+}
+
+.attributes {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.definition{
+    width: 35%;
+    margin-top: 50px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 30px;
+}
+
+.items img {
+    width: 60px;
+    height: 60px;
+}
+
+.items .item{
+    padding: 18px 25px 20px 0 ;
+}
+.items .item div{
+    display: flex;
+    align-items: center;
+}
+
+.items h4 {
+    font-size: 1.5rem;
+    font-family: YekanBakhHeavy;
+    margin-right: 20px;
+}
+
+.items p {
+    margin: 20px 0 20px 10px;
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 36px;
+}
+
+.definition h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+}
+
+.definition p {
+    width: 85%;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+.first-item {
+    border-left: 1px solid #e0e4e7;
+}
+.second-item {
+    border-bottom: 1px solid #e0e4e7;
+}
+.third-item {
+    border-top: 1px solid #e0e4e7;
+}
+.fourth-item {
+    border-right: 1px solid #e0e4e7;
+}
 
 @keyframes fadeindown {
     0%{
@@ -303,7 +445,40 @@ header{
     .banner-img img {
         width: 430;
     }
+    .online-pyment{
+        width: 940px;
+    }
+    .section-text{
+        margin:0 40px 0 20px ;
+    }
+    .attributes{
+        width: 924px;
+        padding:0 8px;
+        flex-direction: column;
+    }
+    .definition{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .definition p {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-item,
+    .second-item,
+    .third-item,
+    .fourth-item {
+        border: none;
+    }
+    .items {
+        width: 90%;
+        padding: 30px;
+    }
+    .items .item{
+        padding: 18px 0;
+    }
 }
+
 @media(max-width: 990px){
     header {
         width: auto;
@@ -337,6 +512,18 @@ header{
     .banner-button {
         margin-top: 40px;
     }
+    .online-pyment{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-text{
+        width: 95%;
+    }
+    .attributes {
+        width: auto;
+        padding: 0 35px;
+    }
 }
 
 @media(max-width:768px){
@@ -354,6 +541,29 @@ header{
         margin-right:8px;
         margin-left: 8px;
     }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-pyment img {
+        width: 460px;
+        height: 480px;
+    }
+    .definition {
+        text-align: center;
+        margin-top:90px;
+    }
+    .definition h3 {
+        font-size: 1.6rem;
+    }
+    .items {
+        width: 100%;
+        padding: 50PX 0;
+    }
+    .items .item{
+        padding: 18px 0 20px 20px;
+    }
 }
 
 @media (max-width:575px) {
@@ -366,5 +576,22 @@ header{
     }
     .banner-text p {
         text-align: justify;
+    }
+    .online-pyment .section-img{
+        display: none;
+    }
+    .section-text{
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3{
+        font-size: 1.5rem;
+    }
+    .items{
+        padding: 50px 0 ;
+        grid-template-columns: 1fr;
+    }
+    .items .item {
+        padding: 18px 0;
     }
 }
